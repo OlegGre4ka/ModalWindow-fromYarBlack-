@@ -1,0 +1,12 @@
+<div class="container buffer-top">
+    <div class="list">
+        <h1> List </h1>
+        <ul class="list-group">
+            <li class="list-group-item" ng-repeat="item in $ctrl.list">
+                <h3>{{item.title}}</h3>
+                <a ng-href="#"ng-click="$ctrl.showModal(item)"><img ng-src="{{item.thumbnailUrl}}" alt="pic"></a>
+                <!-- <button ng-click="$ctrl.showModal(item)">Click me</button> -->
+            </li>
+        </ul>
+    </div>
+</div>
